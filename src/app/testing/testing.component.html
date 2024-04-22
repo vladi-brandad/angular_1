@@ -1,0 +1,6 @@
+@if(!authorized()) {
+  <button (click)="login()">Einlogen</button>
+} @else {
+    <button (click)="logout()">Auslogen</button>
+}
+<div>{{authorized() ? "eingelogt" : "nicht eingelogt"}}</div>

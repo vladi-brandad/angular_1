@@ -1,0 +1,7 @@
+#contact-form-1 {
+  .input-group {
+     input, label {
+      display: block;
+    }
+  }
+}

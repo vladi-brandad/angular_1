@@ -1,0 +1,20 @@
+<div id="contact-form-1">
+  <form #form="ngForm" (submit)="onSubmit(form)"  ngForm action="">
+    <div class="input-group">
+      <label for="userName">User name</label>
+      <input required ngModel type="text" name="userName" id="userName">
+    </div>
+    <div class="input-group">
+      <label for="email">User E-Mail</label>
+      <input required ngModel type="email" name="email" id="email">
+    </div>
+    <div class="input-group">
+      <label for="password">User password</label>
+      <input required ngModel type="password" name="password" id="password">
+    </div>
+    <div class="input-group">
+      <button type="submit">Submit</button>
+      <button (click)="onReset()">Reset</button>
+    </div>
+  </form>
+</div>
